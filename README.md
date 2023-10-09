@@ -1,7 +1,10 @@
+![image](https://github.com/jnr-rodrigues/sync-excel/assets/44007416/e14ea9b0-fd6f-4dbf-ba2d-2eddfd902096)
+
 # Sincronização em Tempo Real com Excel
 
 Este projeto é uma aplicação web que permite a sincronização em tempo real com um arquivo Excel. Ele oferece a capacidade de exibir informações contidas no arquivo Excel em uma página da web e manter essas informações atualizadas em tempo real conforme o arquivo Excel é modificado.
 
+![image](https://github.com/jnr-rodrigues/sync-excel/assets/44007416/da62655e-5691-4fa9-b744-104803169533)
 
 ## Funcionalidades Principais
 
@@ -34,10 +37,10 @@ Permissão é concedida a qualquer pessoa que obtenha uma cópia deste software 
 1. O uso deste software é permitido apenas para fins de estudo pessoal. Não é permitido o uso comercial, venda, redistribuição ou apropriação deste software.
 2. Você concorda em não modificar, copiar, distribuir, transmitir, exibir, executar, reproduzir, publicar, licenciar ou criar trabalhos derivados deste software.
 3. Este software é fornecido "no estado em que se encontra", sem garantias de qualquer tipo, expressas ou implícitas. O autor não se responsabiliza por quaisquer danos ou responsabilidades decorrentes do uso deste software.
+Para qualquer dúvida ou solicitação de permissão adicional, entre em contato conosco.
 
-
-Para qualquer dúvida ou solicitação de permissão adicional, entre em contato com o [autor](https://github.com/jnr-rodrigues).
 Júnior Rodrigues — Onny (c) 2023
+https://github.com/jnr-rodrigues
 
 
 

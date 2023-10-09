@@ -4,6 +4,7 @@
 
 Este projeto é uma aplicação web que permite a sincronização em tempo real com um arquivo Excel. Ele oferece a capacidade de exibir informações contidas no arquivo Excel em uma página da web e manter essas informações atualizadas em tempo real conforme o arquivo Excel é modificado.
 
+![image](https://github.com/jnr-rodrigues/sync-excel/assets/44007416/da62655e-5691-4fa9-b744-104803169533)
 
 ## Funcionalidades Principais
 

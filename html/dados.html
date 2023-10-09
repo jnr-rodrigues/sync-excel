@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <table id="tabela-dados">
+  </table>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on('dados-iniciais', (data) => {
+      atualizarTabela(data);
+    });
+
+    socket.on('atualizar-dados', (data) => {
+      atualizarTabela(data);
+    });
+
+    function atualizarTabela(data) {
+      const tabela = document.getElementById('tabela-dados');
+      tabela.innerHTML = '';
+
+      data.forEach((row) => {
+        const newRow = tabela.insertRow();
+        for (const key in row) {
+          const cell = newRow.insertCell();
+          cell.textContent = row[key];
+        }
+      });
+    }
+  </script>
+</body>
+</html>

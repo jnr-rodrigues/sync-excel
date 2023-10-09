@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Sync Excel</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Dashboard" />
+    <meta name="author" content="jnr-rodrigues" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/w3.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!--<script>
+      window.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+
+      window.addEventListener("keydown", function (e) {
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === "I") {
+          e.preventDefault();
+        }
+      });
+
+      window.addEventListener("keydown", function (e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === "u") {
+          e.preventDefault();
+        }
+      });
+
+      function verificarResolucao() {
+        if (window.innerWidth <= 1450) {
+          window.location.href = "/insupported";
+        }
+      }
+
+      verificarResolucao();
+      window.addEventListener("resize", verificarResolucao);
+    </script>-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <script src="/javascript/data.js"></script>
+  </head>
+
+  <body
+    id="pageTop"
+    style="
+      background-color: #2b2d31;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    "
+  >
+    <!--<div class="transition-screen" id="transition-screen">
+      <div class="transition-screen-content">
+        <i
+          class="fas fa-torii-gate w3-text-white"
+          style="animation: inflateLoad 2s infinite; margin-top: -30px"
+        ></i>
+      </div>
+    </div>-->
+
+    <div id="pageContent" style="margin-left: 20px; margin-right: 20px">
+      <div
+        class="w3-main slide-in"
+        style="
+          margin: 0 auto;
+          max-width: fit-content;
+          z-index: 10;
+          position: relative;
+          margin-bottom: 80px;
+        "
+      >
+        <div class="w3-container" style="margin-top: 80px" id="showcase">
+          <div
+            style="
+              background-color: #1e1f22;
+              padding-bottom: 50px;
+              border-radius: 50px;
+              margin-top: -120px;
+              padding-top: 120px;
+              margin-left: -150px;
+              margin-right: -150px;
+            "
+          >
+            <div style="margin-left: 150px; margin-right: 150px">
+              <div
+                id="bannerUserProfile"
+                style="
+                  background-image: url('https://cdn.discordapp.com/attachments/1039517691242877008/1160927926473207829/banner.jpg?ex=65367162&is=6523fc62&hm=4ed2d3a02d928314e1be2f8d433ec45f4e6e57d65ae01399babf37c3ea31af26&');
+                  background-size: cover;
+                  background-position: center;
+                  height: 150px;
+                  border-radius: 10px;
+                  margin-bottom: 20px;
+                "
+              ></div>
+              <img
+                id="avatarUserProfile"
+                src="https://cdn.discordapp.com/attachments/1039517691242877008/1160927330986893363/a_f0bd4d145295da9c30d051e56e8a81c9.gif?ex=653670d4&is=6523fbd4&hm=9cafb0878fa7c9b72db65ee7213e508d3c2f7e09f142b65e07d67894f0738de1&"
+                style="
+                  width: 140px;
+                  margin-top: -80px;
+                  border-radius: 10px;
+                  margin-left: 30px;
+                  display: inline-block;
+                "
+                alt="Avatar"
+              />
+              <div style="display: inline-block">
+                <h3
+                  id="usernameUserProfile"
+                  class="w3-text-white"
+                  style="
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    vertical-align: top;
+                    margin-top: -10px;
+                  "
+                >
+                  Júnior Rodrigues
+                </h3>
+                <p
+                  id="titleUserProfile"
+                  class="w3-text-grey"
+                  style="
+                    font-size: 13px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    vertical-align: top;
+                    margin-top: -13px;
+                  "
+                >
+                  <i class="fab fa-github"></i>
+                  @jnr-rodrigues
+                </p>
+              </div>
+              <br />
+            </div>
+          </div>
+          <br /><br />
+          <h3
+            id="nameGuild"
+            style="margin-top: 0px; display: inline-block"
+            class="w3-xlarge w3-text-white"
+          >
+            Projeto: Sync Excel
+          </h3>
+          <h4 class="w3-text-grey" style="margin-top: -15px">
+            Todas as informações que estão listadas aqui estão sincronizadas em
+            tempo real com um arquivo excel.
+          </h4>
+          <hr
+            style="width: 150px; border: 5px solid rgb(00, 00, 00)"
+            class="w3-round"
+          />
+          <a href="/dados" class="discord-button discord-link">
+            Acessar API de dados
+          </a>
+
+          <br /><br /><br />
+          <div
+            id="datas"
+            style="
+              background-color: #1e1f22;
+              padding: 20px;
+              border-radius: 10px;
+              display: inline-block;
+              max-width: 2000px;
+              min-width: 1200px;
+              vertical-align: top;
+            "
+          >
+            <h3
+              class="w3-text-white"
+              style="margin-left: 10px; margin-right: 10px"
+            >
+              Dados e informações (Excel)
+            </h3>
+            <p
+              id="searchDesc"
+              class="w3-text-grey"
+              style="margin-top: -15px; margin-left: 10px; margin-right: 10px"
+            >
+              Informe um termo de busca para encontrar o que você precisa de
+              forma rápida e precisa!
+            </p>
+            <br />
+            <input
+              type="text"
+              id="searchInput"
+              style="
+                border-radius: 5px;
+                background-color: #2b2d31;
+                padding: 8px 16px;
+                width: 50%;
+                color: #fff;
+              "
+              placeholder="Digite um termo para busca!"
+            />
+            <button
+              onclick="pesquisar()"
+              class="w3-buttonLogout w3-text-white w3-margin-right"
+              style="
+                border-radius: 5px;
+                background-color: #4070dc;
+                margin: 5px;
+                cursor: pointer;
+              "
+            >
+              Pesquisar
+            </button>
+
+            <br />
+            <div
+              id="searchResults"
+              class="w3-text-white"
+              style="
+                background-color: #1e1f22;
+                padding: 20px;
+                border-radius: 10px;
+                display: inline-block;
+                max-width: 2000px;
+                min-width: 1200px;
+                vertical-align: top;
+              "
+            ></div>
+            <hr
+              style="width: 600px; border: 3px solid #2b2d31"
+              class="w3-round"
+            />
+            <p
+              id="datasDescTitle"
+              class="w3-text-grey"
+              style="margin-top: -15px; margin-left: 10px; margin-right: 10px"
+            >
+              Quantos dados estão nesse excel!?
+            </p>
+            <p
+              style="
+                color: #ced4da;
+                margin-top: -15px;
+                margin-left: 10px;
+                margin-right: 10px;
+              "
+            >
+              Você pode clicar para obter mais informações!
+            </p>
+            <div
+              id="allData"
+              style="margin-left: 10px; margin-right: 10px; min-height: 100%"
+            >
+              <div id="loadingIconDatas">
+                <p class="w3-text-white">
+                  <i class="fa fa-spinner fa-spin"></i> Carregando dados!
+                </p>
+              </div>
+            </div>
+            <br />
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

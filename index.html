@@ -21,6 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <script src="/javascript/interactions.js"></script>
     <!--<script>
       window.addEventListener("contextmenu", function (e) {
         e.preventDefault();
@@ -64,6 +65,93 @@
       user-select: none;
     "
   >
+    <div id="dataMore" class="modalUserProfile">
+      <div
+        class="modalUserProfile-content"
+        style="position: relative; align-items: center"
+      >
+        <div id="loadDiv">
+          <i
+            class="fas fa-torii-gate"
+            style="
+              color: #fff;
+              animation: popIn 1.5s;
+              font-size: 5rem;
+              margin-top: 15%;
+              margin-bottom: 15%;
+              margin-right: 45%;
+              margin-left: 45%;
+            "
+          ></i>
+        </div>
+        <div id="userProfileLocal" style="display: none">
+          <div
+            id="bannerUserProfile"
+            style="
+              background-color: #2b2d31;
+              background-size: cover;
+              background-position: center;
+              height: 150px;
+              border-radius: 10px;
+              margin-bottom: 20px;
+            "
+          ></div>
+          <img
+            id="avatarUserProfile"
+            src="https://cdn.discordapp.com/attachments/1039517691242877008/1160931444873498645/data.png?ex=653674a9&is=6523ffa9&hm=47c2bfb3c4509878ea42730b84617b041f3c108e2425f789d707cb07bebb9955&"
+            style="
+              width: 140px;
+              margin-top: -80px;
+              border-radius: 10px;
+              margin-left: 30px;
+              display: inline-block;
+            "
+            alt="Avatar"
+          />
+          <div style="display: inline-block">
+            <h3
+              id="usernameUserProfile"
+              class="w3-text-white"
+              style="
+                margin-left: 10px;
+                margin-right: 10px;
+                vertical-align: top;
+                margin-top: -10px;
+              "
+            >
+              -
+            </h3>
+            <p
+              id="titleUserProfile"
+              class="w3-text-grey"
+              style="
+                font-size: 13px;
+                margin-left: 10px;
+                margin-right: 10px;
+                vertical-align: top;
+                margin-top: -13px;
+              "
+            >
+              -
+            </p>
+          </div>
+        </div>
+        <br /><br />
+        <button
+          class="w3-button w3-text-white"
+          style="
+            border-radius: 5px;
+            background-color: #1e1f22;
+            margin: 5px;
+            width: auto;
+          "
+          onclick="dataMoreClose()"
+        >
+          Fechar
+        </button>
+      </div>
+    </div>
+
     <!--<div class="transition-screen" id="transition-screen">
       <div class="transition-screen-content">
         <i
@@ -170,8 +258,110 @@
           <a href="/dados" class="discord-button discord-link">
             Acessar API de dados
           </a>
-
-          <br /><br /><br />
+          <br /><br />
+          <div
+            id="type1"
+            class="w3-text-white"
+            style="
+              background-color: #1e1f22;
+              padding: 20px;
+              margin: 5px;
+              border-radius: 10px;
+              display: inline-block;
+              max-width: 400px;
+              min-width: 400px;
+              vertical-align: middle;
+            "
+          >
+            <div style="vertical-align: top">
+              <img
+                src="https://media.discordapp.net/attachments/1039517691242877008/1160982577658728539/numero-1_1.png?ex=6536a448&is=65242f48&hm=cf5566e6f0149f9b5b0c2c7358687d1c9c90ca1f4ea19a3c59ccd88e11298f88&=&width=140&height=140"
+                class="server-image"
+                style="display: inline-block"
+              />
+              <div style="display: inline-block; vertical-align: middle">
+                <h4
+                  id="type1_name"
+                  class="server-name"
+                  style="text-align: left"
+                ></h4>
+                <p
+                  id="type1_desc"
+                  class="server-description"
+                  style="text-align: left"
+                ></p>
+              </div>
+            </div>
+          </div>
+          <div
+            id="type2"
+            class="w3-text-white"
+            style="
+              background-color: #1e1f22;
+              padding: 20px;
+              margin: 5px;
+              border-radius: 10px;
+              display: inline-block;
+              max-width: 400px;
+              min-width: 400px;
+              vertical-align: top;
+            "
+          >
+            <div style="vertical-align: top">
+              <img
+                src="https://media.discordapp.net/attachments/1039517691242877008/1160982577356742696/numero-2.png?ex=6536a448&is=65242f48&hm=f4604531123c689568c2bfdc5ae48d539d67b28d92b92b699db75aacebaab0b3&=&width=140&height=140"
+                class="server-image"
+                style="display: inline-block"
+              />
+              <div style="display: inline-block; vertical-align: middle">
+                <h4
+                  id="type2_name"
+                  class="server-name"
+                  style="text-align: left"
+                ></h4>
+                <p
+                  id="type2_desc"
+                  class="server-description"
+                  style="text-align: left"
+                ></p>
+              </div>
+            </div>
+          </div>
+          <div
+            id="type3"
+            class="w3-text-white"
+            style="
+              background-color: #1e1f22;
+              padding: 20px;
+              margin: 5px;
+              border-radius: 10px;
+              display: inline-block;
+              max-width: 400px;
+              min-width: 400px;
+              vertical-align: top;
+            "
+          >
+            <div style="vertical-align: top">
+              <img
+                src="https://media.discordapp.net/attachments/1039517691242877008/1160982577063133345/numero-3.png?ex=6536a448&is=65242f48&hm=b1c562eea8f30969876686dbc37a1adb02caeb431614ee5cd830f7fce9357c75&=&width=140&height=140"
+                class="server-image"
+                style="display: inline-block"
+              />
+              <div style="display: inline-block; vertical-align: middle">
+                <h4
+                  id="type3_name"
+                  class="server-name"
+                  style="text-align: left"
+                ></h4>
+                <p
+                  id="type3_desc"
+                  class="server-description"
+                  style="text-align: left"
+                ></p>
+              </div>
+            </div>
+          </div>
+          <br /><br />
           <div
             id="datas"
             style="
@@ -206,7 +396,7 @@
                 border-radius: 5px;
                 background-color: #2b2d31;
                 padding: 8px 16px;
-                width: 50%;
+                width: 60%;
                 color: #fff;
               "
               placeholder="Digite um termo para busca!"
@@ -223,8 +413,7 @@
             >
               Pesquisar
             </button>
-
-            <br />
+            <br /><br />
             <div
               id="searchResults"
               class="w3-text-white"
@@ -235,9 +424,15 @@
                 display: inline-block;
                 max-width: 2000px;
                 min-width: 1200px;
+                height: auto;
                 vertical-align: top;
               "
-            ></div>
+            >
+              <p class="w3-text-white">
+                Encontre exatamente o que você precisa. Por favor, informe um
+                termo presente no registro para realizar a busca.
+              </p>
+            </div>
             <hr
               style="width: 600px; border: 3px solid #2b2d31"
               class="w3-round"
